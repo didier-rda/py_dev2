@@ -1,0 +1,184 @@
+#Steps to learning any languge:
+    *Terms
+    *Data Types
+    *Actions
+    *Best Pratices
+
+#Data Types
+
+    *Fundamental Data Types
+         -int
+         -float
+         -bool
+
+         -str
+            long_string = '''
+            WOW
+            0 0
+            ---
+            '''
+            [start:stop:stepover]
+            strig[::-1] print reverse
+         -list
+            --adding:
+                .insert (index, object)
+                .extend(list)
+                .index(value, start, end), return the v-index, you may choose where start-end to looking.
+                . to made a copy: list.copy() or lista2 -lista1[:], if no it will behave as a C pointer.
+            --removing:
+                .pop(index)
+                .remove(value)
+                .clear(void)
+            --others:
+                .count('d'), ocurrances in list
+                .sort    order the list and alter they values order
+                sorted() order the list and return another string
+
+                
+         -tuple
+            -Geocordenates
+         -set
+            my_set.difference(your_set) just show the diff
+            .discard()
+            .difference_update() update my_set with the diff
+            .intersection()
+            .isdisjoint()
+            .issubset()
+            .issuperset()
+            .union()
+         -dict
+            --key must be unique
+            .get(key, value_to_return_ifno) value or None if not exists
+            .values()
+            .keys()
+            .clear()
+            .copy()
+            .pop(key) remove the (key, value)
+            .update({key:new_item})
+
+         -complex
+    
+    obs: bin() return the binary representation
+    ex. 
+        print(bin(5))
+        >0b101
+        print(int('0b101', 2))
+        >5
+    
+    *Classes  
+        (custom types)
+         
+    *Specialized Data Types
+        (extra boosts)
+
+    *None
+
+#Expressions vs Statements
+    count = iq / 5
+
+    all the line is a statement (line of code that performer a comand)
+    iq / 5 is the expression (generate a value)
+
+#Augmented assigment operator (operador de atribuição de incremento)
+    += , -= etc
+
+#Conditional
+    *Ternary Operator
+        (condition_if_true) if (condition) (else) (condition_if_else)
+
+#Short Circuiting
+    When te logic operator (and, or) is satisfied by the first condition and no need to process the next condition
+#Logical Operator
+    diff == and is
+    is se ocupa mesmo lugar na memória
+
+#Break, continue and pass
+
+Continue recall the iterator
+
+#Arguments and parameters
+
+Args: values passed to the function (call the function)
+Params: values passed to the function (define the function)
+ 
+#Developer Fundamentals
+    good dev know how data structure to use
+    *Clean
+    *Readability
+    *Predictability
+    *DRY
+        (do not repeat yourself)
+
+#Docstrings
+    add info to your function:
+    
+    def test(a):
+    '''
+    Info: This func. tests and print param a
+    '''
+    print(a)
+   
+    now info can be acessed by:
+    help(test)
+    test.__doc__
+
+#*args and **kwargs
+*args :can receive as many args as are being called.
+
+**kwargs : receive as many items (key = value) as are being called.
+
+Rule: corret order is params, *args, default params, **kwargs
+
+#Scope
+    *1 -  Start with local
+    *2 - Parent local?
+    *3 - Global
+    *4 - Built in python functions.
+
+#Global Keyword
+in python you can use a global variable in a specific scope by using the keyword: global
+
+global x
+
+#Why do need scope?
+memory is not finite, we do have to adminstate.
+
+#OOP
+
+everthing in pytohn is a object
+class have methods and atributes
+struture code simplify
+
+smalls objs
+
+diferent people in diferent parts
+a way to think or code.
+milions of code.
+
+carro.frente()
+carro.curvaesquerda()
+<class 'list'>
+
+class
+
+#Class Object Attribute doesen't change across the instances
+
+# Class Method:
+you can usea method witout inhstanciate a class
+
+#you can instaciate a objet in a class method
+
+4 PILARS OF OOP
+
+encapsulation:
+
+abstraction:
+only the necessary,
+hide other users.
+
+private vs public variable
+
+self._name (private)
+self.name (public)
+
+inheritance
